@@ -1,8 +1,9 @@
-import { Injectable } from "@nestjs/common";
+import { Injectable } from '@nestjs/common';
+import welllog from './schema/welllog.json';
 
 @Injectable()
 export class AppService {
-  getData(): { message: string } {
-    return { message: "Hello API" };
+  getData(): any {
+    return welllog;
   }
 }
